@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.activity.NomalSearchManager">
+   <androidx.appcompat.widget.Toolbar
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:background="@color/colorPrimary"
+
+           android:id="@+id/searchbar">
+       <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+
+       >
+       <EditText android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:hint="Search.."
+                 android:textColor="#FFFFFF"
+                 android:singleLine="true"
+                 android:imeOptions="actionSearch"
+                 android:background="@null"
+                 android:layout_centerVertical="true"
+                 android:textColorHint="#C0C0C0"
+                 android:id="@+id/search_text"
+       />
+       <ImageView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/clear"
+                  android:padding="@dimen/dp_10"
+                  android:id="@+id/clearthing"
+                  android:layout_alignParentRight="true"
+       />
+       </RelativeLayout>
+   </androidx.appcompat.widget.Toolbar>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/nomalsearch_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nomalsearch_recy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

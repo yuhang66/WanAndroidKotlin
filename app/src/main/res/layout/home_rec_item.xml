@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:id="@+id/hometou"
+                android:layout_marginTop="@dimen/dp_10"
+>
+
+    <ImageView
+            android:id="@+id/homeimg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription"/>
+
+    <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/homeauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homeimg"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/homeimg"
+
+            android:textColor="@android:color/secondary_text_light"
+            tools:text="作者"/>
+
+    <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/hometime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homeimg"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            android:textColor="@android:color/secondary_text_light"
+            tools:text="5小时前"/>
+
+    <TextView
+            android:id="@+id/homeItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homeimg"
+
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+
+            android:textColor="@android:color/darker_gray"
+            tools:ignore="RtlSymmetry"
+            tools:text="日期"/>
+
+    <TextView
+            android:id="@+id/hometitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/homeimg"
+            android:paddingTop="10dp"
+            android:paddingBottom="4dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="19sp"
+            tools:text="一位长达两年半的安卓程序员的内心独白人家66打 咱们不行啊  "/>
+
+    <TextView
+            android:id="@+id/hometype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homeItemLike"
+
+            android:layout_alignTop="@id/homeItemLike"
+
+            android:gravity="center_vertical"
+            android:textColor="#00ABFF"
+            android:textSize="16dp"
+            tools:text="完整项目"/>
+
+    <Button
+            android:id="@+id/homeItemLike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_below="@+id/hometitle"
+            android:padding="5dp"
+            android:background="@drawable/select_item_shoucang"
+           />
+</RelativeLayout>
